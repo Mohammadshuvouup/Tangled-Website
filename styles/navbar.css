@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+@font-face {
+    font-family: "Gilroy-medium";
+    src: url("../fonts/Gilroy-Light.otf");
+}
+
+.navBar {
+    height: 4rem;
+    width: 100%;
+    box-shadow: 0 4px 6px #00000015;
+    background-color: white;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  /* .vertical-line{
+    height: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  } */
+
+  
+  .right-part{
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .burger-menu{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    /* top: 0; */
+    left: 0.8rem;
+    cursor: pointer;
+    display: none;
+  }
+  .burger-menu img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .token-container{
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    height: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .token-container h1{
+    font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #636776;
+  }
+  
+  .coins-container{
+    margin-left: 18px;
+    margin-right: 25px;
+  }
+  .coins-container p{
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #DADBDF;
+  display: inline-block;
+  }
+  
+  .coins-container .coin-icon{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  .coins-container .coin-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  #get-token-btn-mobile{
+    display: none;
+  }
+
+  .get-token-btn{
+    font-style: normal;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 13px;
+  color: #C3BDD9;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 5px rgba(172, 164, 203, 0.5);
+  border-radius: 99px;
+  padding: 7px 13px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .favourite-box{
+    height: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right:1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 0 38px;
+  }
+  
+  .favourite-box p{
+    font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #333333;
+  margin-left: 6px;
+  
+  }
+  
+  .favourite-box .star-icon{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .favourite-box .star-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .navBar .profile{
+    display: flex;
+    margin-left: 18px;
+  }
+  
+  .navBar .profile .profile-pic{
+  width: 44px;
+  height: 44px;
+  }
+  
+  .navBar .profile .profile-pic img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+  }
+  
+  .navBar .username{
+    margin-left: 18px;
+  }
+  
+  .navBar .username h1{
+    font-size: 18px;
+  color: #333333;
+  display: inline-block;
+  font-family: "Gilroy-medium";
+  
+  }
+  .navBar .username p{
+    font-family: "Gilroy-medium";
+    font-size: 14px;
+    color:rgba(0, 0, 0, 0.38)
+  
+  }
+  .navBar .username .down-arrow{
+    width: 11.61px;
+    height: 6.8px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 7px;
+  }
+  .navBar .username .down-arrow img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .sub-box{
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 167px;
+    height: 154px;
+    z-index: 999;
+    top: 34px;
+    right: 37px;
+    padding: 23px 12px;
+    display: none;
+  }
+
+  .sub-box .logo{
+    width: 19.5px;
+    height: 19.5px;
+  }
+  .sub-box .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+ 
+  .sub-box .icon{
+    width: 20px;
+    height: 20px;
+  }
+  .sub-box .icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .sub-box .option{
+    display: flex;
+    align-items: center;
+   
+  }
+
+  .sub-box .option p{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+
+    color: #000000;
+    margin-left: 9px;
+   
+  }
+
+  .sub-box .FAQ ,.sub-box .contact-us{
+    margin-top: 22px;
+  }
+
+  @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait){
+
+  .navBar{
+    flex-direction: column;
+    height: auto;
+    padding: 15px 15px;
+  }
+
+  .burger-menu{
+    display: block;
+  }
+
+  #get-token-btn-desktop{
+    display: none;
+  }
+
+  #get-token-btn-mobile {
+    display: block;
+    margin-top: 2rem;
+    font-size: 19px;
+    padding: 16px 48px;
+}
+
+.coins-container p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+  .right-part{
+    margin-top: 3rem;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .token-container , .favourite-box{
+    border: none;
+    padding: 0;
+  }
+
+  .token-container {
+    margin-left: 10%;
+  }
+
+  .token-container h1 {
+    font-size: 23px;
+  }
+
+   .sub-box {
+    top: 192px;
+    right: 121px;
+   }
+}
+
+  @media only screen and (max-device-width : 700px) and (orientation : portrait){
+
+    .navBar{
+      flex-direction: column;
+      height: auto;
+      padding: 15px 15px;
+    }
+
+    .burger-menu{
+      display: block;
+    }
+
+    #get-token-btn-desktop{
+      display: none;
+    }
+
+    #get-token-btn-mobile{
+      display: block;
+      margin-top: 2rem;
+      font-size: 11px;
+      padding: 12px 48px;
+    }
+
+    .right-part{
+      margin-top: 3rem;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .token-container , .favourite-box{
+      border: none;
+      padding: 0;
+    }
+
+    .token-container {
+      margin-left: 10%;
+    }
+
+    .token-container h1 {
+ 
+      font-size: 15px;
+ 
+ 
+     }
+
+     .sub-box {
+      top: 181px;
+      right: 12px;
+     }
+
+  }
+
+  @media only screen and (max-device-width: 830px) and (orientation : landscape){
+
+    .navBar{
+      flex-direction: column;
+      height: auto;
+      padding: 20px 15px;
+    }
+
+    .burger-menu{
+      display: block;
+    }
+
+    .token-container{
+      margin-bottom: 2rem;
+    }
+
+    .token-container , .favourite-box{
+      border: none;
+      padding: 0;
+    }
+
+    
+    .right-part{
+      justify-content: space-evenly;
+      width: 100%;
+    }
+
+    
+    .sub-box {
+      top: 103px;
+      right: 110px;
+  }
+  }

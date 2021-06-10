@@ -1,0 +1,760 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  /* overflow: hidden; */
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  background-color: #F8F8FB;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/Product\ Sans\ Regular.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-medium";
+  src: url("../fonts/Gilroy-Light.otf");
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #062333;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.dp-flex {
+  display: flex;
+}
+
+.aln-center {
+  align-items: center;
+}
+
+.mainSection {
+  width: 100%;
+  padding-bottom: 2rem;
+  padding-left: 20%;
+}
+
+.classname-box{
+ width: 87%;
+ height: 85px;
+ background-color: white;
+ margin-top: 29px;
+ margin-left: 41px;
+ border-radius: 20px;
+ display: flex;
+ align-items: center;
+ box-shadow: 1px 4px 11px 5px rgba(192, 192, 192, 0.533)
+
+}
+
+.classname-icon-container{
+  width: 45px;
+  height: 45px;
+  margin-left: 22px;
+}
+
+.classname-icon-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.classname-text-container{
+  margin-left: 6px;
+}
+
+.classname-text-container h1{
+  font-family: "Product Sans";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #070829;
+}
+
+.classname-text-container p{
+ font-family: Helvetica, sans-serif;
+ font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+ color: #A0A8BE;
+}
+
+.content-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-left: 47px;
+}
+
+.left-side-container{
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  /* background-color: red; */
+  
+}
+
+.make-post-container{
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 18px 23px;
+  display: flex;
+  position: relative;
+}
+
+.post-box textarea{
+  width: 90%;
+  height: auto;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #666666;
+}
+
+.post-box .send-icon{
+  width: 21px;
+  height: 18px;
+  position: absolute;
+  top: 32px;
+  right: 7%;
+  cursor: pointer;
+}
+.post-box .send-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.post-box textarea::placeholder{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #666666;
+}
+
+.make-post-container .profile-image{
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+}
+
+.make-post-container .profile-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.make-post-container .post-box{
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+  margin-top: 11px;
+}
+
+
+.make-post-container .post-box .upload-btn{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background: #F1F1F1;
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 138px;
+  height: 38px;
+  padding: 5px 10px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.make-post-container .post-box .upload-btn p{
+
+margin-left: 9.5px;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.5px;
+
+color: #000000;
+
+}
+
+.make-post-container .post-box .buttons-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.make-post-container .post-box .upload-btn .btn-icon{
+
+  width: 15px;
+  height: 15px;
+  margin-bottom: 5px;
+
+}
+
+.make-post-container .post-box .upload-btn .btn-icon img{
+
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.right-side-container{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-right: 5px;
+  background-color:  #F4F4FA;
+  padding: 60px 16px;
+  border-radius: 34px;
+}
+
+.course-details-box .icon{
+  width: 78px;
+  height: 78px;
+  margin: -6rem auto 1rem auto;
+}
+.course-details-box .icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.course-details-box .profile h1{
+ 
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+color: #070829;
+text-align: center;
+}
+.course-details-box .profile p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  color: #A0A8BE;
+  margin: .8rem 0;
+}
+
+.course-details-box hr{
+  border-top: 1px solid #D6DAE7;
+}
+
+.course-details-box .about-course{
+  margin-top: 49px;
+}
+
+.course-details-box h5{
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+color: #070829;
+}
+
+.course-details-box .about-course p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px; 
+  color: #68687A;
+  margin-top: 20px;
+}
+
+.course-details-box .course-progress{
+  margin-top: 23px;
+}
+
+.course-details-box .course-progress h5{
+  display: inline-block;
+}
+.course-details-box .course-progress p{
+  display: inline-block;
+  margin-left: 6px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px; 
+  color: #68687A;
+  margin-top: 20px;
+}
+
+.course-details-box .progress-bar{
+  width: 100%;
+  height: 29.57px;
+  background: #4849A1;
+  border-radius: 27px;
+  position: relative;
+  margin-top: 36px;
+}
+
+.course-details-box .progress-bar .bar{
+  width: 45%;
+  height: 29.57px;
+  background: #8889C2;
+  border-radius: 27px;
+  position: absolute;
+}
+
+.course-details-box .join-class{
+  width: 174px;
+  height: 40px;
+  background: #FF7F5E;
+  border-radius: 99px;
+  color: white;
+  text-align: center;
+  padding: 6px 0;
+  margin: 50px auto 0 auto;
+  cursor: pointer;
+}
+
+.newsfeed-post-container {
+ 
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 65px;
+  padding: 21px 21px;
+  position: relative;
+}
+
+.newsfeed-post-container .newsfeed-profile-box{
+  display: flex;
+}
+.newsfeed-post-container .details{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.newsfeed-post-container .profile-pic{
+
+  width: 42px;
+  height: 42px;
+  border-radius: 5px;
+}
+
+.newsfeed-post-container .profile-pic img{
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+
+.newsfeed-post-container .newsfeed-profile-box h1{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #000000;
+  display: inline-block;
+}
+
+.newsfeed-post-container .newsfeed-profile-box p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #666666;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.newsfeed-post-container .time {
+  display: flex;
+  align-items: center;
+}
+
+.newsfeed-post-container .time .time-icon{
+  width: 16px;
+  height: 16px;
+  margin-top: -4px;
+}
+
+.newsfeed-post-container .time .time-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.newsfeed-post-container .time p{
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+
+  color: #666666;
+}
+
+.newsfeed-post-container .description{
+  margin-top: 20px;
+}
+
+.newsfeed-post-container .description p{
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 1px;
+color: #000000;
+
+}
+
+.newsfeed-post-container .post-image{
+  width: 100%;
+  height: 276px;
+  border-radius: 7px;
+  margin-top: 13px;
+}
+
+.newsfeed-post-container .post-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.newsfeed-post-container .number-of-like-comment{
+  margin-top: 19px;
+  display: flex;
+}
+
+.newsfeed-post-container .number-of-like-comment .likes,
+.newsfeed-post-container .number-of-like-comment .comments{
+  display: flex;
+  cursor: pointer;
+}
+
+.newsfeed-post-container .number-of-like-comment .comments{
+  margin-left: 23.5px;
+}
+
+.newsfeed-post-container .number-of-like-comment .share-icon{
+ 
+  position: absolute;
+  right: 21px;
+  cursor: pointer;
+}
+
+.newsfeed-post-container .number-of-like-comment .number{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+  
+  color: #141946;
+  margin-left: 6px
+}
+
+.newsfeed-post-container .number-of-like-comment .text{
+  font-style: normal;
+  /* font-weight: bold; */
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.5px; 
+  color: #666666;
+  margin-left: 6px
+}
+
+.newsfeed-post-container .number-of-like-comment .icon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.newsfeed-post-container .number-of-like-comment .icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.newsfeed-post-container .number-of-like-comment p{
+ display: inline-block;
+ padding: 2px 0;
+ 
+}
+
+.newsfeed-post-container .button-container {
+  display: flex;
+  margin-top: 23px;
+}
+
+.newsfeed-post-container .button-container .btn{
+
+  width: 141px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.25);
+  border-radius: 40px;
+  padding: 10px 8px;
+  display: flex;
+  justify-content: center;
+ cursor: pointer;
+
+}
+
+.newsfeed-post-container .button-container .btn p{
+
+  margin-left: 6px;
+  font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.5px;
+
+color: #000000;
+}
+
+.newsfeed-post-container .button-container .share{
+
+margin-left: 16%;
+}
+.newsfeed-post-container .button-container .comment{
+
+margin-left:15px;
+}
+
+.newsfeed-post-container .more-icon{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  cursor: pointer;
+}
+
+.newsfeed-post-container .more-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.newsfeed-post-container .more-options{
+  position: absolute;
+    top: 44px;
+    right: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 1.4rem 1rem;
+
+    display: none;
+}
+
+.newsfeed-post-container .more-options .icon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.newsfeed-post-container .more-options p{
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: 0.5px;
+
+color: #000000;
+
+display: inline-block;
+margin-left: 10px;
+}
+
+.newsfeed-post-container .more-options .unfollow{
+  margin: 22px 0;
+}
+
+.newsfeed-post-container .more-options .report,
+.newsfeed-post-container .more-options .unfollow,
+.newsfeed-post-container .more-options .send-message{
+  display: flex;
+  cursor: pointer;
+}
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait){
+
+  .mainSection{
+    padding-left: 0;
+  }
+
+ 
+}
+
+
+@media only screen and (max-device-width : 375px) and (orientation : portrait){
+
+  .make-post-container .post-box .upload-btn {
+  
+    width: 124px;
+    padding: 5px 7px;
+    margin-right: 0px;
+    
+}
+
+.make-post-container .post-box .upload-btn p {
+  margin-left: 8.5px;
+  font-size: 11px;
+ 
+}
+}
+
+
+@media only screen and (max-device-width : 700px) and (orientation : portrait){
+.mainSection {
+  padding:0 .8rem ;
+}
+
+.classname-box,.content-container{
+  margin-left: 0;
+  width: 100%;
+}
+
+.left-side-container, .right-side-container{
+  width: 100%;
+}
+
+.right-side-container{
+  margin-top: 4rem;
+}
+
+.content-container{
+  flex-direction: column;
+}
+
+.make-post-container {
+  padding: 10px 15px;
+
+}
+
+.upload-btn{
+  margin-bottom: 10px;
+}
+
+.newsfeed-post-container .button-container .comment,
+.newsfeed-post-container .button-container .share{
+  margin-left: 0;
+
+}
+
+.newsfeed-post-container .button-container {
+ 
+  justify-content: space-between;
+}
+
+.newsfeed-post-container {
+
+  padding: 21px 11px;
+
+}
+
+.post-box .send-icon{
+ 
+  top: 23px;
+  right: 15px;
+}
+}
+
+@media only screen and (max-device-width: 830px) and (orientation : landscape){
+  .mainSection {
+    padding:0 1rem ;
+    padding-bottom: 1rem;
+  }
+  
+  .classname-box,.content-container{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .content-container{
+    flex-direction: column;
+  }
+  
+  .left-side-container, .right-side-container{
+    width: 100%;
+  }
+  
+  .right-side-container{
+    margin-top: 4rem;
+  }
+
+  .newsfeed-post-container .button-container {
+ 
+    justify-content: space-between;
+}
+.newsfeed-post-container .button-container .comment,
+.newsfeed-post-container .button-container .share{
+  margin-left: 0;
+
+}
+}
+
+@media only screen and (min-device-width: 831px) and (max-device-width: 1326px) and (orientation : landscape){
+
+  .make-post-container .post-box {
+ 
+    margin-left: 11px;
+   
+}
+
+
+.make-post-container .post-box .upload-btn {
+
+    width: 123px;
+    padding: 5px 6px;
+    margin-right: 0px;
+     margin-bottom: 5px
+
+}
+
+.make-post-container .post-box .upload-btn p {
+
+    font-size: 9px;
+}
+}
